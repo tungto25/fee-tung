@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-photo/water-fall_335224-988.jpg?ga=GA1.1.1237201776.1723113473&semt=ais_items_boosted&w=740);
+    background-size: 100% 100%;
+}
+
+form {
+    width: 60%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    h1 {
+        text-align: center;
+        border-bottom: 1px solid white;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            border: 3px solid white;
+            width: 30px;
+            transform: translate(-50%,50%);
+            left: 50%;
+        }
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin-top: 30px;
+        input,select,textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+            margin-left: 15px;
+        }
+    }
+    .link {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        button {
+            padding: 5px 10px;
+            background-color: green;
+            color: white;
+            border-radius: 2px;
+        }
+    }
+}

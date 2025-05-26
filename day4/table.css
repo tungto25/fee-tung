@@ -1,0 +1,27 @@
+
+
+
+table,th,tr,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.edit {
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+}
+.deleted {
+    padding: 5px 10px;
+    background-color:red;
+    color: white;
+}
+td {
+    position: relative;
+    &::before {
+        content: "🖥️";
+        position: absolute;
+        bottom: 0;
+    }
+}

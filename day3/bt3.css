@@ -369,8 +369,8 @@ main {
                     }
                 }
 
-                img:hover {
-                    animation: abc 8s ease ;
+                img {
+                    animation: abc 1s ease ;
                 }
             }
         }
@@ -633,6 +633,6 @@ footer {
     }
 
     to {
-        transform: scale(8) rotate(180deg);
+        transform: scale(1) rotate(180deg);
     }
 }
