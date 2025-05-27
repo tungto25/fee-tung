@@ -149,7 +149,7 @@ img{
     position: absolute;
     z-index: 3;
     bottom: 100px;
-    left: 0;
+    left: 10px;
 }
 .box-img img{
     height: 400px;
