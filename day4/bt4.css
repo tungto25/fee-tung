@@ -10,12 +10,12 @@ img {
     height: 100%;
     object-fit: cover;
 }
-:root{
-    --border-radius:30px;
+
+:root {
+    --border-radius: 30px;
 }
 
 body {
-    
     height: 100vh;
     background-image: url(https://i.postimg.cc/VsCDK70w/869a8c79e44842e0a95b96aa69948da3009e4d5e-1.jpg);
     background-size: 100%, 100%;
@@ -24,53 +24,83 @@ body {
 }
 
 form {
-    width: 60%;
-    display: flex;
-    position: relative;
-}
-
-.white-box {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(0, 196, 176);
     border-radius: var(--border-radius);
-    background-color: white;
-    width: 70%;
-    margin-left: 30%;
-    padding: 20px;
+
+    .blue-box {
+        border-radius: var(--border-radius);
+        padding: 30px;
+        position: relative;
+        h1 {
+            margin-top: 50px;
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+        }
+        .box-img {
+            position: absolute;
+        }
+    }
+
+    .white-box {
+        border-radius: var(--border-radius);
+        background-color: white;
+        padding: 20px;
+
+        .country {
+            text-align: right;
+
+            select {
+                border: none;
+            }
+        }
+
+        .form-group {
+            padding: 80px;
+            padding-bottom: 0;
+
+            input {
+                padding: 20px;
+                width: 100%;
+                margin-top: 20px;
+                border: none;
+                outline: none;
+            }
+        }
+
+        hr {
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            margin-bottom: 10px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 50px;
+              padding: 0 30px;
+            input[type="checkbox"] {
+                width: auto;
+                margin: 0;
+            }
+
+            p {
+                flex: 1;
+                text-align: start;
+            }
+        }
+    }
+}
+
+.pass {
     position: relative;
-    z-index: 2;
-    right: 0;
 }
 
-.country {
-    width: 100%;
-    text-align: right;
-}
-
-.country select {
-    border: none;
-}
-.form-group{
-    padding: 80px;
-    padding-bottom: 0;
-}
-h1{
-    font-size: 2.5rem;
-}
-
-input{
-    padding: 20px;
-    width: 100%;
-    margin-top: 20px;
-    border: none;
-    outline: none;
-}
-hr{
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    margin-bottom: 10px;
-}
-.pass{
-    position: relative;
-}
-.fa-eye{
+.fa-eye {
     position: absolute;
     right: 5px;
     bottom: 50%;
@@ -78,18 +108,9 @@ hr{
     color: rgba(0, 0, 0, 0.201);
     scale: 1.2;
 }
-.box{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    gap: 10px;
-    margin-top: 50px;
-}
-input[type="checkbox"]{
-    width: auto;
-    margin: 0;
-}
-.but{
+
+
+.but {
     width: 100%;
     padding: 20px 40px;
     background-color: rgb(65, 182, 255);
@@ -99,19 +120,23 @@ input[type="checkbox"]{
     border: none;
     margin-bottom: 30px;
 }
-p{
+
+p {
     text-align: center;
 }
-.contact{
+
+.contact {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
-img{
+
+img {
     height: 32px;
     width: 32px;
 }
-.con{
+
+.con {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,39 +144,28 @@ img{
     border: none;
     background-color: white;
 }
-.end{
+
+.end {
     display: flex;
     justify-content: center;
     margin-top: 100px;
     gap: 10px;
 }
-.blue-box{
-    background-color: rgb(0, 196, 176);
-    border-radius: var(--border-radius);
-    position: absolute;
-    left: 0;
-    height: 100%;
-    padding: 30px;
-    z-index: 1;
-}
-.blue-box img{
+
+.blue-box img {
     width: 80px;
     height: 50px;
 }
-.blue-box h1{
-    margin-top: 50px;
-    width: 50%;
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-}
-.box-img{
+
+.box-img {
     position: absolute;
     z-index: 3;
     bottom: 100px;
     left: 10px;
 }
-.box-img img{
+
+.box-img img {
     height: 400px;
     width: 500px;
 }
+

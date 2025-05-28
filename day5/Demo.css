@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    padding: 10px;
+    .lorem{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: orange;
+        
+    }
+    .menu{
+        display: flex;
+        gap: 10px;
+        margin-left: 50%;
+    }
+    .fa-user-tie{
+        margin-left: 10%;
+    }
+}
+.container {
+    display: grid;
+    gap: 10px;
+}
+section {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    gap: 10px;
+    .box1 {
+        grid-area: b1;
+      }
+      .box2 {
+        grid-area: b2;
+      }
+      .box3 {
+        grid-area: b3;
+      }
+      .box4 {
+        grid-area: b4;
+      }
+      .box5 {
+        grid-area: b5;
+      }
+      .box6 {
+        grid-area: b6;
+      }
+  }
+article {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+  
+  
+
+
+/* laptop */
+@media screen and (min-width: 1025px) {
+    header{
+        .fa-bars{
+            display: none;
+        }
+        
+     }
+     .container {
+        grid-template-columns: repeat(4,1fr);
+     }
+   section {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+      "b6 b2 b2"
+      "b6 b3 b4"
+      "b5 b5 b1";
+   }
+   article {
+    gap: 10px;
+   }
+   
+}
+
+/* tablet */
+@media screen and (min-width: 741px) and (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2,1fr);
+     }
+     section {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+          "b6 b2"
+          "b4 b3"
+          "b5 b1";
+       }
+    article {
+          gap: 10px;
+          flex-wrap: wrap-reverse;
+          justify-content: center;
+        .box {
+            width: calc(100%/2 - 5px);
+        }
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 740px) {
+     header{
+        display: flex;
+        justify-content: space-evenly;
+        .fa-bars{
+            display: block;
+        }
+        .menu{
+            display: none;
+        }
+     }
+
+     section {
+        grid-template-areas: 
+          "b6"
+          "b3"
+          "b2"
+          "b1"
+          "b4"
+          "b5"
+          ;
+       }
+       article {
+        gap: 10px;
+        flex-wrap: wrap;
+        
+     
+  }
+}
+

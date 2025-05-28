@@ -25,17 +25,13 @@ header {
     align-items: center;
     padding: var(--padding);
     position: sticky;
+    width: 100%;
     top: 0;
-    margin-top: 10px;
-
     .search {
         position: relative;
-        margin-left: 500px;
-
         input {
             padding: 12px;
             border-radius: var(--border-radius);
-            width: 1200px;
             border: var(--border);
         }
 
@@ -150,3 +146,4 @@ button {
         }
     }
 }
+
