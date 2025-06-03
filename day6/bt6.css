@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+:root {
+    --color: rgb(135, 225, 0);
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    .container-fluid {
+
+        .navbar-brand {
+            color: var(--color);
+        }
+
+        .nav-item {
+            .active {
+                color: var(--color);
+            }
+        }
+
+        form {
+            button {
+                color: var(--color);
+            }
+        }
+
+    }
+}
+
+main {
+    .aa {
+        background-image: url(https://themewagon.github.io/fruitables/img/hero-img.jpg);
+        background-size: 100%, 100%;
+    }
+
+    .container-fluid {
+        .container {
+            .content {
+                h1 {
+                    color: var(--color);
+                }
+
+                .btn {
+                    right: 0;
+                    background-color: var(--color);
+
+                    &:hover {
+                        background-color: orange;
+                    }
+                }
+
+            }
+            .aaa{
+                position: relative; 
+                &::after{
+                    position: absolute;
+                    content: "";
+                    border-top: 25px solid orange;
+                    border-left: 25px solid transparent;
+                    border-right: 25px solid transparent;
+                    top: 92%;
+                    left: 50%;
+                    transform: translate(-50%);
+                }
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                background-color: var(--color);
+                height: 50px;
+                width: 50px;
+            }
+
+            .card .box {
+                background-color: orange;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+            }
+
+            .ca {
+
+                transition: box-shadow 1s ease;
+
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                }
+
+                .box-img {
+                    overflow: hidden;
+                    transition: trasform 2s ease;
+
+                    cursor: pointer;
+
+                    img {
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+
+
+            }
+
+            .button,.ttex {
+                color: var(--color);
+            }
+
+            .green {
+                background-color: var(--color);
+            }
+
+            .tasty {
+                color: var(--color);
+            }
+
+        }
+    }
+}
+footer{
+    background-color: rgb(50, 72, 71);
+    .container-fluid{
+        .container{
+            h1,.green{
+                color: var(--color);
+            }
+            h2,p{
+                color: white;
+            }
+            .a{
+                background-color: var(--color);
+            }
+        }
+        table{
+            background-color: none;
+        }
+    }
+}
+
+/* laptop */
+@media screen and (min-width: 1025px) {
+    .container-fluid {
+        nav {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+        }
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 741px) and (max-width: 1024px) {}
+
+/* Mobile */
+@media screen and (max-width: 740px) {}
