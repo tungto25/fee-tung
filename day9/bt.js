@@ -131,13 +131,38 @@ function question12() {
 }
 // question12();
 // 14. Tính tổng điểm Toán, Anh và Khoa học của tất cả học sinh trong danh sách.
-
+function question17() {
+    var totalMath = 0;
+    var totalEnglish = 0;
+    var totalScience = 0;
+    for (i = 0; i < students.length; i++) {
+        totalMath += students[i].scores.math;
+        totalEnglish += students[i].scores.english;
+        totalScience += students[i].scores.science;
+    }
+    console.log(totalMath, totalEnglish, totalScience);
+}
+// question17();
 // 15. Tạo một mảng mới chỉ chứa id của các học sinh.
-
+function question18() {
+    var a = students.map(e => e.id)
+    console.log(a);
+}
+// question18();
 // 16. Viết hàm để xáo trộn thứ tự ngẫu nhiên các học sinh trong danh sách.
 
 // 17 .Tìm học sinh có tuổi nhỏ nhất trong danh sách.
+function question19() {
+    var min = students[0];
+    for (i = 1; i < students.length; i++) {
+        if (min.age > students[i].age) {
+            min = students[i];
+        }
+    }
+    console.log(min);
 
+}
+question19();
 // 18. Thêm một đối tượng học sinh mới vào danh sách.
 // students.push(
 //     { id: 11, name: "Tran linh", age: 16, grade: "11", scores: { math: 89, english: 74, science: 81 } }
@@ -179,4 +204,4 @@ function question16() {
     });
     console.log(b);
 }
-question16();
+// question16();
