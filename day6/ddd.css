@@ -1,6 +1,6 @@
-.content{
-    display: flex;
-    flex-wrap: wrap;
-    
-
+.box{
+    width: 320px;
+    height: 280px;
+    background-color: #f8d04b;
+    border-radius: 40% 60% 60% 40% / 50%;
 }
