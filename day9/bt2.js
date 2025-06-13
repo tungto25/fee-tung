@@ -65,26 +65,83 @@ function question6() {
 }
 // question6();
 // 7.Tính số lượng học sinh theo từng mức xếp hạng(Xuất sắc, Giỏi, Trung bình, Yếu).
-
+function question7() {
+    var xuatsac = 0;
+    var gioi = 0;
+    var trungbinh = 0;
+    var yeu = 0;
+    for (i = 0; i < students.length; i++) {
+        var avg = (students[i].math + students[i].english + students[i].science) / 3;
+        if (avg >= 90) {
+            xuatsac++;
+        } else if (avg >= 80) {
+            gioi++
+        } else if (avg >= 60) {
+            trungbinh++;
+        } else { yeu++ };
+    };
+    console.log("Xuất sắc" + " " + xuatsac);
+    console.log("Giỏi" + " " + gioi);
+    console.log("Trung bình" + " " + trungbinh);
+    console.log("Yếu" + " " + yeu);
+}
+// question7();
 
 // 8.Kiểm tra xem có học sinh nào bị điểm liệt(môn bất kỳ dưới 30) không.
+function question8() {
+    var a = students.some(e => e.english < 30 || e.math < 30 || e.science < 30);
+    console.log(a);
 
-
+}
+// question8();
 // 9.Tìm tất cả học sinh có tên bắt đầu bằng chữ "T" và học lớp 10.
+function question9() {
+    var a = students.filter(e => e.name.charAt(0) == "T" && e.class == "10");
+    console.log(a);
 
-
+}
+// question9();
 // 10.Tìm học sinh có điểm tiếng Anh cao nhất trong lớp 11.
+function question10() {
+    var max = students[0];
+    for (i = 1; i < students.length; i++) {
+        if (max.english < students[i].english && students[i].class == "11") {
+            max = students[i];
+        }
+    };
+    console.log(max);
 
-
+}
+// question10();
 // 11.Chuyển toàn bộ tên học sinh sang dạng viết thường.
+function question11() {
+    var a = students.map(e => {
+        e.name = e.name.toLocaleLowerCase();
+        return e;
+    });
+    console.log(a);
 
-
+}
+// question11();
 // 12.Tạo một danh sách mới gồm các học sinh lớn hơn 15 tuổi và có điểm trung bình > 70.
+function question12() {
+    var a = students.filter(e => e.age > 15 && ((e.english + e.math + e.science) / 3) > 70);
+    console.log(a);
 
-
+}
+// question12();
 // 13.Tính tổng số học sinh có điểm Khoa học từ 90 trở lên.
+function question13() {
+    var total = 0;
+    for (i = 0; i < students.length; i++) {
+        if (students[i].science > 90) {
+            total++;
+        }
+    };
+    console.log(total);
 
-
+}
+question13()
 // 14.Tạo một bảng xếp hạng học sinh theo điểm trung bình(từ cao xuống thấp).
 
 
