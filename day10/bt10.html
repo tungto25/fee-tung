@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bt10.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid py-1 ">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <a class="navbar-brand naples" href="#"><strong>Naples</strong></a>
+
+                <button class="navbar-toggler border-0 order-1 p-0 p-md-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    <i class="fa-solid fa-bars" style="scale: 0.7;"></i>
+                </button>
+
+                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                    aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="staticBackdropLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Menu
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#pizza">Pizza</a></li>
+                                        <li><a class="dropdown-item" href="#">Burger</a></li>
+                                        <li><a class="dropdown-item" href="#">Pasta</a></li>
+                                        <li><a class="dropdown-item" href="#">Spaghetti</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Shop</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="offcanvas-footer">
+                        <div class="offcanvas-contact p-4">
+                            <div class="d-flex align-items-center gap-2 mt-2">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span>Naples@email.com</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                                <span>573-8304-0830-246</span>
+                            </div>
+                        </div>
+                        <div class="offcanvas-brand d-flex flex-column align-items-center pb-2">
+                            <a class="navbar-brand naples" href="#"><strong>Naples</strong></a>
+                            <div class="d-flex align-items-center gap-2 mt-2 ms-2">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="d-flex ms-auto" role="search">
+                    <div class="position-relative ">
+                        <input class="form-control rounded-4 px-3 py-2 d-none d-md-block" type="search"
+                            placeholder="Search something..." aria-label="Search" />
+                        <i
+                            class="fa-solid fa-magnifying-glass position-absolute end-0 top-50 translate-middle-y me-2"></i>
+                        <i
+                            class="fa-regular fa-user position-absolute end-0 top-50 translate-middle-y me-4 px-2 d-block d-md-none"></i>
+                    </div>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <main class="pt-5">
+        <div class="a py-5 d-flex flex-column justify-content-center align-items-center text-center text-white">
+            <h1 class="mt-4"><strong>The fastest delivery in <br> your city</strong></h1>
+            <h6 class="mt-4"><strong>Visit our restaurant to taste our italian cuisine or <br> simply order it from our
+                    website.</strong></h6>
+            <button type="button"
+                class="btn btn-outline-light rounded-4 border-2 border-white py-2 px-5 mt-4"><strong>Order
+                    Now</strong></button>
+        </div>
+        <div class="container-fluid px-1 px-lg-5 py-3 text-center position-relative text">
+            <img src="https://i.postimg.cc/MHCL52CG/xxx.png" alt="">
+            <div class="position-absolute top-50 start-50 translate-middle ">
+                <h1><strong>Welcome to Naples</strong></h1>
+                <p class="mt-2">We started working in 2007 and in 2012 we were able to <br> open our second branch and
+                    now we have
+                    several <br>
+                    branches all over the country.</p>
+            </div>
+        </div>
+        <div class=" py-3">
+            <div class="d-flex gap-5 align-items-start">
+                <h2 class="menu bg-danger p-2 text-center text-white">Menu</h2>
+                <div class="row row-cols-lg-4 row-cols-md-3 row-cols-1 g-2 flex-grow-1">
+                    <div class="col">
+                        <div
+                            class="d-flex justify-content-evenly align-items-center gap-3 bg-light border-1 rounded-2 p-1 box">
+                            <img src="https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-pepperoni-pizza-isolated-with-clipping-path-png-image_9221595.png"
+                                class="image img-fluid" alt="...">
+                            <div class="vr my-3"></div>
+                            <span class="tex">Pizza</span>
+                            <div
+                                class="icon rounded-circle text-white d-flex justify-content-center align-items-center bg-danger">
+                                <i class="fa-solid fa-xmark "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div
+                            class="d-flex justify-content-evenly align-items-center gap-3 bg-light border-1 rounded-2 p-1 box">
+                            <img src="https://static.vecteezy.com/system/resources/previews/047/827/664/non_2x/delicious-fast-food-burger-hamburger-cheeseburger-transparent-background-free-png.png"
+                                class="image img-fluid" alt="...">
+                            <div class="vr my-3"></div>
+                            <span class="tex">Burger</span>
+                            <div
+                                class="icon rounded-circle text-white d-flex justify-content-center align-items-center bg-danger ">
+                                <i class="fa-solid fa-plus "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div
+                            class="d-flex justify-content-evenly align-items-center gap-3 bg-light border-1 rounded-2 p-1 box">
+                            <img src="https://toppng.com/uploads/preview/pasta-food-no-background-11668639690w5nlfogmfv.png"
+                                class=" image img-fluid" alt="...">
+                            <div class="vr my-3"></div>
+                            <span class="tex">Pasta</span>
+                            <div
+                                class="icon rounded-circle text-white d-flex justify-content-center align-items-center bg-danger">
+                                <i class="fa-solid fa-plus "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div
+                            class="d-flex justify-content-evenly align-items-center gap-3 bg-light border-1 rounded-2 p-1 box">
+                            <img src="https://toppng.com/uploads/preview/spaghetti-11526061644exusofs2u8.png"
+                                class="image img-fluid" alt="...">
+                            <div class="vr my-3"></div>
+                            <span class="tex">Spaghetti</span>
+                            <div
+                                class="icon rounded-circle text-white d-flex justify-content-center align-items-center bg-danger">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container-fluid py-5">
+            <div class="container ">
+                <h3 class="pt-5 ps-5" id="pizza"><strong>Popular Pizzas of Naples</strong></h3>
+            </div>
+            <div class="row pt-5">
+                <div class="col-2">
+                    <img src="https://i.postimg.cc/L4ws2302/7bf4abe39e2cfc7ee293c96188f353a289349234.png"
+                        class="img-fluid img-pizza ms-lg-5 ps-lg-5 " alt="...">
+                </div>
+                <div class="col-10 ">
+                    <div class="row text-white pizza ">
+                        <h1 class="col-4"></h1>
+                        <h3 class="col-4 ptext"><strong>Pepperoni pizza</strong></h3>
+                        <h3 class="col-4 pe-3 ptext">$55,00</h3>
+                    </div>
+                    <div class="row bg-body-secondary ">
+                        <div class="col-4"></div>
+                        <div class="col-8">
+                            <div class=" position-relative py-1 py-md-4">
+                                <div class="row g-2 py-0 py-lg-3">
+                                    <li class="col-6 litext"><strong>Pepperoni sausage</strong></li>
+                                    <li class="col-6 litext"><strong>Thyme</strong></li>
+                                    <li class="col-6 litext"><strong>Cheese pizza</strong></li>
+                                    <li class="col-6 litext"><strong>Tomato</strong></li>
+                                    <li class="col-6 litext"><strong>Red bell pepper</strong></li>
+                                    <li class="col-6 litext" style="list-style: none;"></li>
+                                    <li class="col-6 litext"><strong>Ketchup</strong></li>
+                                    <li class="col-6 litext" style="list-style: none;"></li>
+                                </div>
+                                <button type="button"
+                                    class="btn btn-danger position-absolute end-0 bottom-0 me-0 me-md-2 mb-0 mb-md-3 ptext">Add
+                                    to Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-10">
+                    <div class="row text-white pizza ">
+                        <h3 class="col-4 ms-lg-3  ptext"><strong>Vegetables pizza</strong></h3>
+                        <h3 class="col-4 text-end ptext">$50,00</h3>
+                        <h1 class="col-4"></h1>
+                    </div>
+                    <div class="row bg-body-secondary ">
+                        <div class="col-8">
+                            <div class=" position-relative py-1 py-md-4">
+                                <div class="row g-2 py-0 py-lg-3">
+                                    <li class="col-6 litext"><strong>Mushroom</strong></li>
+                                    <li class="col-6 litext"><strong>Corn</strong></li>
+                                    <li class="col-6 litext"><strong>Black olive</strong></li>
+                                    <li class="col-6 litext"><strong>Tomato</strong></li>
+                                    <li class="col-6 litext"><strong>Peas</strong></li>
+                                    <li class="col-6 litext" style="list-style: none;"></li>
+                                    <li class="col-12 litext" style="list-style: none;"></li>
+                                    <li class="col-12 litext" style="list-style: none;"></li>
+                                    <li class="col-12 litext" style="list-style: none;"></li>
+                                </div>
+                                <button type="button"
+                                    class="btn btn-danger position-absolute end-0 bottom-0 mb-0 mb-md-3 ptext">Add
+                                    to Get</button>
+                            </div>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img src="https://i.postimg.cc/W1JTPcV2/e4576d2c81d906ff26a35af29fcc97c179615477.png"
+                        class="img-fluid img-pizza1 position-relative z-1" alt="...">
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-2">
+                    <img src="https://i.postimg.cc/BbKb7Lm0/b759285c86a55c4ad031c17a82d4db5221f7a75c.png"
+                        class="img-fluid img-pizza3 ms-lg-5 ps-lg-5 " alt="...">
+                </div>
+                <div class="col-10 ">
+                    <div class="row text-white pizza ">
+                        <h1 class="col-4"></h1>
+                        <h3 class="col-4 ptext"><strong>Pepperoni pizza</strong></h3>
+                        <h3 class="col-4 text-end pe-3 ptext">$49.87</h3>
+                    </div>
+                    <div class="row bg-body-secondary ">
+                        <div class="col-4"></div>
+                        <div class="col-8">
+                            <div class=" position-relative py-1 py-md-4">
+                                <div class="row g-2 py-0 py-lg-3">
+                                    <li class="col-6 litext"><strong>Basil</strong></li>
+                                    <li class="col-6 litext"><strong>Thyme</strong></li>
+                                    <li class="col-6 litext"><strong>Cheese pizza</strong></li>
+                                    <li class="col-6 litext"><strong>Tomato</strong></li>
+                                    <li class="col-6 litext"><strong>Black pepper</strong></li>
+                                    <li class="col-6 litext" style="list-style: none;"></li>
+                                    <li class="col-6 litext"><strong>Garlic</strong></li>
+                                    <li class="col-6 litext" style="list-style: none;"></li>
+                                </div>
+                                <button type="button"
+                                    class="btn btn-danger position-absolute end-0 bottom-0 me-0 me-md-2 mb-0 mb-md-3 ptext">Add
+                                    to Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row row-cols-md-3 row-cols-1 ">
+                <div class="col">
+                    <div class="card text-bg-dark h-75">
+                        <img src="https://i.pinimg.com/236x/d4/00/97/d400979b3a8e3017eafd0085482de91d.jpg"
+                            class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end py-5 px-4">
+                            <h3 class="card-text mb-3">Appetizer</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark h-75">
+                        <img src="https://www.fuliterpaperbox.com/uploads/%E5%9B%BE%E7%89%8715.png" class="card-img"
+                            alt="...">
+                        <div class="card-img-overlay d-flex align-items-end py-5 px-4">
+                            <h3 class="card-text mb-3">Dessert</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark h-75">
+                        <img src="https://cdn.shopify.com/s/files/1/0348/6770/8043/files/sub-buzz-1433-1584647753-25_480x480.webp?v=1683907595"
+                            class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end py-5 px-4">
+                            <h3 class="card-text mb-3">Beverage</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container bg-body-secondary w-lg-75 w-md-50 w-75 rounded-4 py-3">
+                <h2 class="text-center py-3"><strong>Share your opinion <br>with us</strong></h2>
+                <form class="share ">
+                    <div class="box1 ">
+                        <input type="text" class="form-control py-3 px-1 rounded-4" id="inputEmail4"
+                            placeholder="Your name">
+                    </div>
+                    <div class="box2">
+                        <input type="email" class="form-control py-3 px-1 rounded-4" id="inputPassword4"
+                            placeholder="Your email">
+                    </div>
+                    <div class="box3">
+                        <textarea class="form-control rounded-4" rows="5" placeholder="Write something..."></textarea>
+                    </div>
+                </form>
+                <div class="text-center mt-3">
+                    <button type="button"
+                        class="btn btn-outline-danger border-2 rounded-pill py-1 px-4 "><strong>Send</strong></button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="pt-5">
+        <div class="row  bg-body-secondary p-5">
+            <div class="col-lg-3 col-md-3 col-12">
+                <h4><strong>Contact</strong></h4>
+                <div class="d-flex align-items-center gap-2 mt-2">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Naples@email.com</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>
+                    <span>573-8304-0830-246</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12">
+                <h4><strong>Info</strong></h4>
+                <p>About us</p>
+                <p>Our stores</p>
+                <p>Food recipes</p>
+                <p>Our chefs</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <h4><strong>Help</strong></h4>
+                <p>Find a tasting</p>
+                <p>Take an order</p>
+                <p>Privacy policy</p>
+                <p>Terms and conditions</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 ">
+                <div class="d-flex flex-column h-100">
+                    <a class="navbar-brand naples d-none d-md-block" href="#"><strong>Naples</strong></a>
+                    <div class="d-flex align-items-center gap-2 mt-2 ms-2 d-none d-md-block">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <a class="navbar-brand naples mt-auto align-self-end mb-3 d-block d-md-none"
+                        href="#"><strong>Naples</strong></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="m-auto color text-white py-3 d-block d-md-none">
+            <div class="d-flex align-items-center justify-content-center gap-2 ">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
